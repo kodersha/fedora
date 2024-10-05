@@ -1,0 +1,10 @@
+type: rpm-ostree
+install:
+  # ======================================
+  - libxcrypt-compat
+  - podman-compose
+  - hunspell-ru
+  - corectrl
+  - ffmpeg
+  - code
+  # ======================================

@@ -1,0 +1,11 @@
+type: systemd
+system:
+  disabled:
+    - NetworkManager-wait-online
+    - firewalld
+  enabled:
+    - mount-nix-prepare
+    - gdm
+user:
+  enabled:
+    - podman

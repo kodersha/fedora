@@ -1,43 +1,60 @@
-# BlueBuild Template &nbsp; [![bluebuild build badge](https://github.com/blue-build/template/actions/workflows/build.yml/badge.svg)](https://github.com/blue-build/template/actions/workflows/build.yml)
+# fedora &nbsp; [![build-ublue](https://github.com/kodersha/fedora/actions/workflows/build.yml/badge.svg)](https://github.com/kodersha/fedora/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
-
-After setup, it is recommended you update this README to describe your custom image.
+![fastfetch](/.readme/fastfetch.png)
 
 ## Installation
 
-> **Warning**  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+To rebase an existing atomic Fedora installation to the latest build, first rebase to the unsigned image, to get the proper signing keys and policies installed:
+```bash
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/kodersha/fedora:latest
+```
 
-To rebase an existing atomic Fedora installation to the latest build:
+Reboot to complete the rebase:
+```bash
+systemctl reboot
+```
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
-  ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/blue-build/template:latest
-  ```
-- Reboot to complete the rebase:
-  ```
-  systemctl reboot
-  ```
-- Then rebase to the signed image, like so:
-  ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/blue-build/template:latest
-  ```
-- Reboot again to complete the installation
-  ```
-  systemctl reboot
-  ```
+Then rebase to the signed image, like so:
+```bash
+rpm-ostree rebase ostree-image-signed:docker://ghcr.io/kodersha/fedora:latest
+```
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
+Reboot again to complete the installation:
+```bash
+systemctl reboot
+```
+
+### Nix Package Manager
+
+```
+export NIX_PATH=$HOME/.nix-defexpr/channels${NIX_PATH:+:}$NIX_PATH
+nix-shell '<home-manager>' -A install
+```
+
+```
+home-manager switch
+```
 
 ## ISO
 
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
+```
+mkdir ./iso && sudo podman run --rm --privileged --volume ./iso:/build-container-installer/build --security-opt label=disable --pull=newer ghcr.io/jasonn3/build-container-installer:latest IMAGE_REPO=ghcr.io/kodersha IMAGE_NAME=fedora IMAGE_TAG=latest VARIANT=Server VERSION=40
+```
 
 ## Verification
 
 These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
 
 ```bash
-cosign verify --key cosign.pub ghcr.io/blue-build/template
+cosign verify --key cosign.pub ghcr.io/kodersha/fedora
 ```
+
+## Known Issues
+
+- After installation, you need to run `sudo nano /etc/hosts` and add the line `127.0.1.1   fedora`. Otherwise, the browser will start very slowly. This is related to the DNS entry in `/etc/systemd/resolved.conf.d/00-custom.conf`.
+- You need to run the command `sudo flatpak override --filesystem=xdg-config/gtk-3.0 && sudo flatpak override --filesystem=xdg-config/gtk-4.0` to apply GTK theme to Flatpak applications.
+
+---
+
+Sources:
+- [Silverblue Nix](https://gitlab.com/ahayzen/silverblue-nix)
