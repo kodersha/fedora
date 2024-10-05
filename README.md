@@ -27,12 +27,7 @@ systemctl reboot
 ### Nix Package Manager
 
 ```
-export NIX_PATH=$HOME/.nix-defexpr/channels${NIX_PATH:+:}$NIX_PATH
-nix-shell '<home-manager>' -A install
-```
-
-```
-home-manager switch
+sh <(curl -L https://nixos.org/nix/install) --daemon
 ```
 
 ## ISO
@@ -57,4 +52,5 @@ cosign verify --key cosign.pub ghcr.io/kodersha/fedora
 ---
 
 Sources:
+
 - [Silverblue Nix](https://gitlab.com/ahayzen/silverblue-nix)
