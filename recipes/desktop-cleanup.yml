@@ -1,7 +1,7 @@
 type: rpm-ostree
 remove:
-  - gnome-session-xsession
   - gnome-remote-desktop
+  - gnome-session-xsession
   - gnome-tour
   - malcontent-control
   - malcontent-ui-libs
