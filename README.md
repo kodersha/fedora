@@ -1,6 +1,6 @@
 # fedora &nbsp; [![build-ublue](https://github.com/kodersha/fedora/actions/workflows/build.yml/badge.svg)](https://github.com/kodersha/fedora/actions/workflows/build.yml)
 
-![fastfetch](/.readme/fetch.png)
+![fastfetch](/.readme/fastfetch.png)
 
 ## Installation
 
