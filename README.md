@@ -26,13 +26,39 @@ systemctl reboot
 
 ### Nix Package Manager
 
+Remove backup of `/etc/bashrc` created before nix installation.
+```bash
+sudo rm /etc/bashrc.backup-before-nix
 ```
+
+Install nix in multi-user mode.
+```bash
 sh <(curl -L https://nixos.org/nix/install) --daemon
+```
+
+Update nix channels to get the latest package versions.
+```bash
+nix-channel --update
+```
+
+Run `nix-shell` to install Home Manager.
+```bash
+nix-shell '<home-manager>' -A install
+```
+
+Apply the current Home Manager configuration.
+```bash
+home-manager switch
+```
+
+Remove Home Manager default configuration files from the home directory.
+```bash
+rm -rf ~/.config/home-manager
 ```
 
 ## ISO
 
-```
+```bash
 mkdir ./iso && sudo podman run --rm --privileged --volume ./iso:/build-container-installer/build --security-opt label=disable --pull=newer ghcr.io/jasonn3/build-container-installer:latest IMAGE_REPO=ghcr.io/kodersha IMAGE_NAME=fedora IMAGE_TAG=latest VARIANT=Server VERSION=40
 ```
 
@@ -51,6 +77,7 @@ cosign verify --key cosign.pub ghcr.io/kodersha/fedora
 
 ---
 
-Sources:
+#### Sources
 
+- [Blue Build](https://blue-build.org/learn/getting-started/)
 - [Silverblue Nix](https://gitlab.com/ahayzen/silverblue-nix)
