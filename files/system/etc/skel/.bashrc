@@ -15,6 +15,7 @@ export LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
 export HOME_MANAGER_CONFIG=$HOME/.nix-config/home-manager/home.nix
 export NIXPKGS_CONFIG=$HOME/.nix-config/nixpkgs/config.nix
 export NIX_PATH=$HOME/.nix-defexpr/channels${NIX_PATH:+:}$NIX_PATH
+export NIXPKGS_ALLOW_WARNINGS=1
 
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then

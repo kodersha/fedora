@@ -6,77 +6,74 @@
       "1": "blue"
     },
     "padding": {
-      "top": 2,
-      "left": 1
-    }
+      "top": 1,
+      "left": 2
+    },
+    "position": "left"
   },
   "display": {
     "separator": "· ",
     "color": "blue"
   },
-  "modules": [{
-      "type": "title",
-      "keyColor": "blue",
-      "format": "{6}{7}{8}"
-    },
+  "modules": [
     "break",
     {
-      "key": "OS         ",
+      "key": "  OS         ",
       "keyColor": "blue",
       "type": "os"
     },
     {
-      "key": "Kernel     ",
+      "key": "  Kernel     ",
       "keyColor": "blue",
       "type": "kernel",
       "format": "{1} {2}"
     },
     {
-      "key": "Packages   ",
+      "key": "  Packages   ",
       "keyColor": "blue",
       "type": "packages"
     },
     {
-      "key": "Processes  ",
+      "key": "  Processes  ",
       "keyColor": "blue",
       "type": "processes"
     },
     "break",
     {
-      "key": "WM         ",
+      "key": "  WM         ",
       "keyColor": "blue",
       "type": "wm"
     },
     {
-      "key": "DE         ",
+      "key": "  DE         ",
       "keyColor": "blue",
       "type": "de"
     },
     "break",
     {
-      "key": "Shell      ",
+      "key": "  Shell      ",
       "keyColor": "blue",
       "type": "shell"
     },
     {
-      "key": "Terminal   ",
+      "key": "  Terminal   ",
       "keyColor": "blue",
       "type": "terminal"
     },
     "break",
     {
-      "key": "Board      ",
+      "key": "  Board      ",
       "keyColor": "blue",
       "type": "board"
     },
     {
-      "key": "BIOS       ",
+      "key": "  BIOS       ",
       "keyColor": "blue",
       "type": "bios"
     },
     "break",
     {
-      "key": "CPU        ",
+      "key": "  CPU        ",
       "keyColor": "blue",
       "type": "cpu",
       "temp":
@@ -86,7 +83,7 @@
       }
     },
     {
-      "key": "GPU        ",
+      "key": "  GPU        ",
       "keyColor": "blue",
       "type": "gpu",
       "temp":
@@ -97,44 +94,46 @@
     },
     "break",
     {
-      "key": "Memory     ",
+      "key": "  Memory     ",
       "keyColor": "blue",
       "type": "memory"
     },
     {
-      "key": "Swap       ",
+      "key": "  Swap       ",
       "keyColor": "blue",
       "type": "swap"
     },
     "break",
     {
-      "key": "Disk       ",
+      "key": "  Disk       ",
       "keyColor": "blue",
       "type": "disk"
     },
     "break",
     {
-      "key": "Monitor    ",
+      "key": "  Monitor    ",
       "keyColor": "blue",
       "type": "monitor",
       "format": "{1}"
     },
     {
-      "key": "Resolution ",
+      "key": "  Resolution ",
       "keyColor": "blue",
       "type": "display",
       "compactType": "original-with-refresh-rate"
     },
     "break",
     {
-      "key": "Uptime     ",
+      "key": "  Uptime     ",
       "keyColor": "blue",
       "type": "uptime"
     },
     "break",
     {
+      "key": " ",
       "type": "colors",
-      "symbol": "circle"
+      "symbol": "circle",
+      "paddingLeft": 2
     }
   ]
 }

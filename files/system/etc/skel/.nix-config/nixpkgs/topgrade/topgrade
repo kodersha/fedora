@@ -1,26 +1,20 @@
 [misc]
-# Sudo command to be used
 sudo_command = "sudo"
 
-# Do not set the terminal title (default: true)
-set_title = true
-
-# Display the time in step titles
 display_time = false
-
-# Cleanup temporary or old files
+set_title = true
 cleanup = true
 
+[linux]
+rpm_ostree = true
+
 [npm]
-# Use sudo if the NPM directory isn't owned by the current user
 use_sudo = true
 
 [firmware]
-# Offer to update firmware; if false just check for and display available updates
 upgrade = true
 
 [flatpak]
-# Use sudo for updating the system-wide installation
 use_sudo = true
 
 [distrobox]
