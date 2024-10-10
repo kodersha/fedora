@@ -6,7 +6,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific environment
-export PATH="$HOME/.local/bin:$HOME/bin:$HOME/.nix-profile/bin:$PATH"
+export PATH="/usr/bin:/usr/local/bin:/usr/sbin:/usr/local/sbin:$HOME/.local/bin:$HOME/bin:$HOME/.nix-profile/bin:$PATH"
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=

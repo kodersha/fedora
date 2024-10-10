@@ -1,4 +1,3 @@
-PATH="/usr/bin:/usr/local/bin:/usr/sbin:/usr/local/sbin"
 AMD_VULKAN_ICD=RADV
 PROTON_NO_FSYNC=1
 PROTON_NO_ESYNC=1
