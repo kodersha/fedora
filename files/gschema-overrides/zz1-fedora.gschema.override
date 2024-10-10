@@ -68,7 +68,7 @@ center-new-windows=true
 check-alive-timeout=0
 
 [org.gnome.shell]
-enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'dash-to-dock@micxgx.gmail.com', 'dash-to-panel@jderose9.github.com', 'pip-on-top@rafostar.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'Vitals@CoreCoding.com', 'AlphabeticalAppGrid@stuarthayhurst']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'dash-to-dock@micxgx.gmail.com', 'dash-to-panel@jderose9.github.com', 'pip-on-top@rafostar.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'Vitals@CoreCoding.com', 'AlphabeticalAppGrid@stuarthayhurst', 'rounded-window-corners@fxgn']
 favorite-apps=['org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop']
 disabled-extensions=[]
 app-picker-layout=[]
@@ -82,7 +82,7 @@ show-hidden-files=true
 default-zoom-level='small'
 
 [org.gnome.desktop.app-folders] 
-folder-children=[]
+folder-children=['']
 
 [org.gnome.shell.extensions.user-theme]
 name='WhiteSur-Dark-solid-alt-blue'
@@ -152,3 +152,11 @@ position-in-panel=0
 [org.gnome.shell.extensions.alphabetical-app-grid]
 folder-order-position='end'
 sort-folder-contents=true
+
+[org.gnome.shell.extensions.rounded-window-corners-reborn]
+border-color='(0.0, 0.0, 0.0, 1.0)'
+border-width=-1
+global-rounded-corner-settings='{"padding": <{"left": uint32 2, "right": 2, "top": 2, "bottom": 2}>, "keepRoundedCorners": <{"maximized": false, "fullscreen": false}>, "borderRadius": <uint32 10>, "smoothing": <0.0>, "enabled": <true>}'
+skip-libadwaita-app=false
+skip-libhandy-app=false
+settings-version=6
