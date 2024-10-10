@@ -1,5 +1,6 @@
 type: gnome-extensions
 install:
+  - 7048 # rounded-window-corners-reborn
   - 4691 # pip-on-top
   - 4269 # alphabetical-app-grid
   - 1460 # vitals
