@@ -1,0 +1,9 @@
+[Unit]
+Description=Tor Service
+
+[Service]
+ExecStart=/home/travkina/.nix-profile/bin/tor --defaults-torrc /home/travkina/.tor/torrc
+Restart=always
+
+[Install]
+WantedBy=default.target
