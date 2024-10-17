@@ -7,6 +7,7 @@ install:
   - corectrl
   - fastfetch
   - flatseal
+  - ffmpeg
   - fuse-sshfs
   - gamescope
   - gh
@@ -18,25 +19,10 @@ install:
   - loupe
   - obfs4
   - openrgb
-  - perl
-  - python3-pip
-  - python3.10
   - podman-compose
   - steam-devices
   - topgrade
   - tor
   - zsh
   - zstd
-  # ======================================
-  - mesa-vdpau-drivers-freeworld
-  - mesa-va-drivers-freeworld
-  - ffmpeg
-  # ======================================
-  - rocminfo
-  - rocm-hip
-  - rocm-clinfo
-  - rocm-runtime
-  - rocm-runtime-devel
-  - rocm-opencl
-  - rocm-opencl-devel
   # ======================================
