@@ -1,4 +1,4 @@
-[kodersha]
+[copr-fedora]
 name=Copr repo for fedora owned by kodersha
 baseurl=https://download.copr.fedorainfracloud.org/results/kodersha/fedora/fedora-$releasever-$basearch/
 type=rpm-md
