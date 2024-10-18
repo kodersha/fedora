@@ -1,5 +1,6 @@
 type: rpm-ostree
 repos:
+  - https://raw.githubusercontent.com/kodersha/fedora/main/sources/repos/cachyos.repo
   - https://raw.githubusercontent.com/kodersha/fedora/main/sources/repos/fedora.repo
   - https://raw.githubusercontent.com/kodersha/fedora/main/sources/repos/vscode.repo
 install:
