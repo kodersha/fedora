@@ -7,6 +7,7 @@ image-version: 40
 modules:
   - from-file: common-repository.yml
   - from-file: common-cleanup.yml
+  - from-file: common-kernel.yml
 
   - from-file: desktop-packages.yml
   - from-file: desktop-cleanup.yml
