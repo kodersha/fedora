@@ -1,0 +1,34 @@
+type: rpm-ostree
+install:
+  # ======================================
+  - mesa-vdpau-drivers-freeworld
+  - mesa-va-drivers-freeworld
+  - ffmpeg
+  # ======================================
+  - libappstream-glib
+  - libxcrypt-compat
+  - perl-interpreter
+  - podman-compose
+  - zstd
+  # ======================================
+  - fuse-sshfs
+  - fastfetch
+  - topgrade
+  - gitui
+  - just
+  - zsh
+  - gh
+  # ======================================
+  - celluloid
+  - corectrl
+  - flatseal
+  - openrgb
+  - loupe
+  - btop
+  - code
+  # ======================================
+  - obfs4
+  - tor
+  # ======================================
+  - hunspell-ru
+  # ======================================
