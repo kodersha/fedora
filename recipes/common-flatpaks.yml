@@ -1,0 +1,6 @@
+type: default-flatpaks
+notify: false
+system:
+  repo-title: "flathub"
+  repo-name: flathub
+  repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
