@@ -9,11 +9,13 @@ install:
   - libxcrypt-compat
   - perl-interpreter
   - podman-compose
+  - p7zip
   - zstd
   # ======================================
   - fuse-sshfs
   - fastfetch
   - topgrade
+  - zenity
   - gitui
   - just
   - btop
