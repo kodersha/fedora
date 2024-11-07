@@ -1,0 +1,5 @@
+type: script
+snippets:
+  - "if ! grep \"VARIANT\" /etc/os-release; then echo \"VARIANT=\\\"Silverblue\\\"\" >> /usr/lib/os-release; fi"
+scripts:
+  - complete.sh

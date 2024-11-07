@@ -1,0 +1,26 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=btop++
+GenericName=System Monitor
+GenericName[it]=Monitor di sistema
+Comment=Resource monitor that shows usage and stats for processor, memory, disks, network and processes
+Comment[it]=Monitoraggio delle risorse: mostra utilizzo e statistiche per CPU, dischi, rete e processi
+Icon=utilities-system-monitor
+Exec=btop
+Terminal=true
+Categories=System;Monitor;ConsoleOnly;
+Keywords=system;process;task
+Name[ru]=btop++
+Name[ru_RU]=btop++
+Name[ru_RU.UTF-8]=btop++
+Comment[ru]=Resource monitor that shows usage and stats for processor, memory, disks, network and processes
+Comment[ru_RU]=Resource monitor that shows usage and stats for processor, memory, disks, network and processes
+Comment[ru_RU.UTF-8]=Resource monitor that shows usage and stats for processor, memory, disks, network and processes
+Keywords[ru]=system;process;task
+Keywords[ru_RU]=system;process;task
+Keywords[ru_RU.UTF-8]=system;process;task
+Hidden=false
+NoDisplay=false
+StartupNotify=false
+

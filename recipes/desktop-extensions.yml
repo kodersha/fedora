@@ -1,0 +1,10 @@
+type: gnome-extensions
+install:
+  - 4691 # pip-on-top
+  - 4269 # alphabetical-app-grid
+  - 3193 # blur-my-shell
+  - 1460 # vitals
+  - 1160 # dash-to-panel
+  - 615  # appindicator
+  - 307  # dash-to-dock
+  - 19   # user-themes

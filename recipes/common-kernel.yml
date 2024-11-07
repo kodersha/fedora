@@ -1,0 +1,16 @@
+type: rpm-ostree
+repos:
+  - https://raw.githubusercontent.com/kodersha/fedora/refs/heads/main/sources/repos/copr-cachyos-addons.repo
+  - https://raw.githubusercontent.com/kodersha/fedora/refs/heads/main/sources/repos/copr-cachyos.repo
+remove:
+  - kernel-modules-extra
+  - kernel-modules-core
+  - kernel-modules
+  - kernel-core
+  - kernel
+install:
+  - kernel-cachyos
+  - procps-ng-devel
+  - libcap-ng-devel
+  - scx-scheds
+  - uksmd

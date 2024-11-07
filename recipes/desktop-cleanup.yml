@@ -1,0 +1,7 @@
+type: rpm-ostree
+remove:
+  - gnome-remote-desktop
+  - gnome-tour
+  - malcontent-control
+  - malcontent-ui-libs
+  - rygel
