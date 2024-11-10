@@ -3,17 +3,25 @@ repos:
   - https://raw.githubusercontent.com/kodersha/fedora/refs/heads/main/sources/repos/copr-cachyos-addons.repo
   - https://raw.githubusercontent.com/kodersha/fedora/refs/heads/main/sources/repos/copr-cachyos.repo
 remove:
+  # ======================================
   - kernel-modules-extra
   - kernel-modules-core
   - kernel-modules
   - kernel-core
   - kernel
+  # ======================================
   - zram-generator-defaults
+  # ======================================
 install:
+  # ======================================
   - kernel-cachyos
-  - cachyos-settings
   - procps-ng-devel
   - libcap-ng-devel
-  - ananicy-cpp
   - scx-scheds
   - uksmd
+  # ======================================
+  - cachyos-settings
+  # ======================================
+  - cachyos-ananicy-rules
+  - ananicy-cpp
+  # ======================================
