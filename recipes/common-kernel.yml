@@ -14,5 +14,6 @@ install:
   - cachyos-settings
   - procps-ng-devel
   - libcap-ng-devel
+  - ananicy-cpp
   - scx-scheds
   - uksmd
