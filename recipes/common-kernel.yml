@@ -10,6 +10,7 @@ remove:
   - kernel
 install:
   - kernel-cachyos
+  - cachyos-settings
   - procps-ng-devel
   - libcap-ng-devel
   - scx-scheds
