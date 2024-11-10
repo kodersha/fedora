@@ -5,7 +5,7 @@ GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
 GRUB_DEFAULT=saved
 GRUB_DISABLE_SUBMENU=true
 GRUB_TERMINAL_OUTPUT="console"
-GRUB_CMDLINE_LINUX_DEFAULT="rhgb quiet splash nowatchdog mitigations=off pci=pcie_bus_perf page_alloc.shuffle=1 lpj=3417600 amdgpu.ppfeaturemask=0xffffffff radeon.cik_support=0 amdgpu.cik_support=1"
+GRUB_CMDLINE_LINUX_DEFAULT="rhgb quiet splash nowatchdog preempt=full mitigations=off pci=pcie_bus_perf page_alloc.shuffle=1 lpj=3417600 amdgpu.ppfeaturemask=0xffffffff radeon.cik_support=0 amdgpu.cik_support=1"
 GRUB_CMDLINE_LINUX=""
 GRUB_DISABLE_RECOVERY=true
 GRUB_ENABLE_BLSCFG=true
