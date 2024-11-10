@@ -6,6 +6,7 @@ system:
     - avahi-daemon
     - firewalld
   enabled:
+    - ananicy-cpp
     - uksmd
     - scx
 user:
