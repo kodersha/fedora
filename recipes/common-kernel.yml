@@ -8,6 +8,7 @@ remove:
   - kernel-modules
   - kernel-core
   - kernel
+  - zram-generator-defaults
 install:
   - kernel-cachyos
   - cachyos-settings
