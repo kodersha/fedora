@@ -1,0 +1,18 @@
+## Tor configuration for using bridges
+
+# Allow the use of bridges
+UseBridges 1
+
+# Indicate how Tor should interactively connect to bridges using obfs4
+ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
+
+# Adding obfs4 bridges
+Bridge obfs4 141.95.102.230:51501 63B96BA35F7E3A1B6F5BA23CC0F795E5ECEDF76A cert=bUMFP0ri+zTmSFNO/fv9rXYcNFts/0y4Up+xqMt1Blj79BkKs3L+b5VjrysMVMPbmE7iFw iat-mode=0
+
+# Do not run Tor as a service
+RunAsDaemon 0
+
+# SOCKS port
+SocksPort 9050
+
+DataDirectory /var/lib/tor

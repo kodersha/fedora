@@ -1,0 +1,13 @@
+type: systemd
+system:
+  disabled:
+    - NetworkManager-wait-online
+    - avahi-daemon.socket
+    - avahi-daemon
+    - firewalld
+  enabled:
+    - uksmd
+    - scx
+user:
+  enabled:
+    - podman
