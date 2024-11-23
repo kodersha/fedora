@@ -39,6 +39,7 @@ remove:
   - cups-filters-driverless
   - cups-ipptool
   - cups-libs
+  - qt5-qtbase-gui
   - gutenprint
   - gutenprint-cups
   - gutenprint-libs
