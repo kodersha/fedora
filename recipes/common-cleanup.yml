@@ -38,6 +38,7 @@ remove:
   - cups-filters
   - cups-filters-driverless
   - cups-ipptool
+  - cups-libs
   - gutenprint
   - gutenprint-cups
   - gutenprint-libs
