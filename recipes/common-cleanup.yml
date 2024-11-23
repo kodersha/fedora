@@ -50,6 +50,7 @@ remove:
   - libcupsfilters
   - libsane-hpaio
   - libppd
+  - system-config-printer-udev
   # ======================================
   - sane-airscan
   - sane-backends
