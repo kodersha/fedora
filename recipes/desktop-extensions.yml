@@ -1,5 +1,6 @@
 type: gnome-extensions
 install:
+  - 5389 # screen-rotate
   - 4691 # pip-on-top
   - 4269 # alphabetical-app-grid
   - 3193 # blur-my-shell
