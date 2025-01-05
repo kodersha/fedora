@@ -5,7 +5,7 @@ GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
 GRUB_DEFAULT=saved
 GRUB_DISABLE_SUBMENU=true
 GRUB_TERMINAL_OUTPUT="console"
-GRUB_CMDLINE_LINUX_DEFAULT="rhgb quiet splash nowatchdog nomodeset preempt=full mitigations=off"
+GRUB_CMDLINE_LINUX_DEFAULT="rhgb quiet splash nowatchdog preempt=full mitigations=off rd.driver.blacklist=nouveau modprobe.blacklist=nouveau nvidia-drm.modeset=1"
 GRUB_CMDLINE_LINUX=""
 GRUB_DISABLE_RECOVERY=true
 GRUB_ENABLE_BLSCFG=true
