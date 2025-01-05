@@ -1,7 +1,6 @@
 PATH="/usr/bin:/usr/local/bin:/usr/sbin:/usr/local/sbin"
 SHELL="/bin/zsh"
 HOMEBREW_NO_AUTO_UPDATE=1
-AMD_VULKAN_ICD=RADV
 PROTON_NO_FSYNC=1
 PROTON_NO_ESYNC=1
 DXVK_FRAME_RATE=120
