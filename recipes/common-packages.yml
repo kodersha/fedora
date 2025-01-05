@@ -1,6 +1,10 @@
 type: rpm-ostree
 install:
   # ======================================
+  - akmod-nvidia 
+  - xorg-x11-drv-nvidia
+  - xorg-x11-drv-nvidia-cuda
+  # ======================================
   - ffmpegthumbnailer
   - ffmpeg
   - openh264
@@ -34,5 +38,3 @@ install:
   # ======================================
   - hunspell-ru
   # ======================================
-  - akmod-nvidia 
-  - xorg-x11-drv-nvidia
