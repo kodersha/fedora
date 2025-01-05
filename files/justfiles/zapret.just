@@ -25,12 +25,22 @@ zapret:
   
   # Download the repository contents
   if [ ! -d "zapret" ]; then
-    if ! sudo git clone https://github.com/bol-van/zapret.git --depth=1 .; then
-      echo "Failed to clone the repository. Exiting..."
+    echo "Downloading zapret archive..."
+    if ! curl -L -o zapret.tar.gz https://github.com/bol-van/zapret/releases/download/v69.9/zapret-v69.9.tar.gz; then
+      echo "Failed to download the archive. Exiting..."
       exit 1
     fi
+  
+    echo "Extracting zapret archive..."
+    if ! tar -xzf zapret.tar.gz; then
+      echo "Failed to extract the archive. Exiting..."
+      exit 1
+    fi
+  
+    # Optionally remove the archive after extraction
+    rm zapret.tar.gz
   else
-    echo "Done."
+    echo "Zapret directory already exists. Skipping download."
   fi
   
   # Download the first file
