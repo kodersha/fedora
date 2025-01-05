@@ -23,7 +23,6 @@ install:
   - gh
   # ======================================
   - celluloid
-  - corectrl
   - flatseal
   - openrgb
   - catfish
@@ -35,3 +34,5 @@ install:
   # ======================================
   - hunspell-ru
   # ======================================
+  - akmod-nvidia 
+  - xorg-x11-drv-nvidia
