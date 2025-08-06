@@ -18,7 +18,6 @@ install:
   - loupe
   - code
   # ======================================
-  - protonvpn
   - torsocks
   - obfs4
   - tor
