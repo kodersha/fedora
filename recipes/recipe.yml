@@ -10,4 +10,5 @@ modules:
   - from-file: common-packages.yml
   - from-file: common-homebrew.yml
   - from-file: common-flatpaks.yml
+  - from-file: common-files.yml
   - from-file: common-signing.yml
