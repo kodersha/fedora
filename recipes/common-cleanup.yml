@@ -169,6 +169,14 @@ remove:
   - rit-rachana-fonts
   - vazirmatn-vf-fonts
   # ======================================
+  - gnome-shell-extension-apps-menu
+  - gnome-shell-extension-background-logo
+  - gnome-shell-extension-common
+  - gnome-shell-extension-launch-new-instance
+  - gnome-shell-extension-places-menu
+  - gnome-shell-extension-supergfxctl-gex
+  - gnome-shell-extension-window-list
+  - gnome-classic-session
   - gnome-browser-connector
   - gnome-remote-desktop
   - gnome-backgrounds
