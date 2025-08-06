@@ -169,6 +169,7 @@ remove:
   - rit-rachana-fonts
   - vazirmatn-vf-fonts
   # ======================================
+  - gnome-browser-connector
   - gnome-remote-desktop
   - gnome-backgrounds
   - gnome-system-monitor
@@ -176,5 +177,12 @@ remove:
   - gnome-tour
   - malcontent-control
   - malcontent-ui-libs
+  - vim-filesystem
+  - vim-enhanced
+  - vim-minimal
+  - vim-common
+  - vim-data
   - rygel
+  - nvtop
+  - htop
   # ======================================
