@@ -177,6 +177,7 @@ remove:
   - gnome-tour
   - malcontent-control
   - malcontent-ui-libs
+  - vim-enhanced
   - vim-common
   - rygel
   - nvtop
