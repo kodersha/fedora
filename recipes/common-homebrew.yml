@@ -1,0 +1,3 @@
+type: brew
+brew-analytics: false
+nofile-limits: true

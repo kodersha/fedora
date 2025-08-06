@@ -1,0 +1,7 @@
+type: rpm-ostree
+repos:
+  - https://raw.githubusercontent.com/kodersha/fedora/refs/heads/main/sources/repos/microsoft-vscode.repo
+  - https://raw.githubusercontent.com/kodersha/fedora/refs/heads/main/sources/repos/copr-fedora.repo
+install:
+  - https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-42.noarch.rpm
+  - https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-42.noarch.rpm

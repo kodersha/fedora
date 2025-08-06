@@ -1,0 +1,37 @@
+type: rpm-ostree
+install:
+  # ======================================
+  - akmod-nvidia
+  - xorg-x11-drv-nvidia
+  - xorg-x11-drv-nvidia-cuda
+  # ======================================
+  - libappstream-glib
+  - libxcrypt-compat
+  - perl-interpreter
+  - podman-compose
+  - p7zip
+  - unrar
+  - zstd
+  # ======================================
+  - fuse-sshfs
+  - fastfetch
+  - topgrade
+  - gitui
+  - just
+  - btop
+  - zsh
+  - gh
+  # ======================================
+  - celluloid
+  - flatseal
+  - openrgb
+  - catfish
+  - loupe
+  - code
+  # ======================================
+  - torsocks
+  - obfs4
+  - tor
+  # ======================================
+  - hunspell-ru
+  # ======================================

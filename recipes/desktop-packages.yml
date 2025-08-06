@@ -1,0 +1,12 @@
+type: rpm-ostree
+install:
+  - gnome-control-center
+  - gnome-terminal
+  - gnome-terminal-nautilus
+  - gnome-extensions-app
+  - gnome-disk-utility
+  - gnome-session
+  - gnome-shell
+  - nautilus
+  - sushi
+  - gdm
