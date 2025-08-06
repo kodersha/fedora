@@ -7,6 +7,7 @@ remove:
   # ======================================
   - fedora-bookmarks
   - fedora-chromium-config
+  - fedora-chromium-config-gnome
   - fedora-workstation-backgrounds
   # ======================================
   - orca
@@ -170,5 +171,11 @@ remove:
   - rit-rachana-fonts
   - vazirmatn-vf-fonts
   # ======================================
-  - zram-generator-defaults
+  - gnome-remote-desktop
+  - gnome-backgrounds
+  - gnome-system-monitor
+  - gnome-tour
+  - malcontent-control
+  - malcontent-ui-libs
+  - rygel
   # ======================================
