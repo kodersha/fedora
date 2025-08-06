@@ -42,14 +42,34 @@ complete:
   fi
     echo ""
 
-  echo -e "❯ Adding entry to hosts..."
-  # Check if the line 127.0.1.1 fedora exists in /etc/hosts
-  if ! grep -q "127.0.1.1 fedora" /etc/hosts; then
-    echo "127.0.1.1 fedora" | sudo tee -a /etc/hosts > /dev/null
-    echo -e "${GREEN}❯ Done.${RESET}"
-  else
-    echo -e "${GREEN}❯ Hosts already exists.${RESET}"
-  fi
+  echo -e "❯ Adding entries to hosts..."
+
+  # List of entries to add
+  HOST_ENTRIES=(
+    "127.0.1.1 fedora"
+    "204.12.192.222 ab.chatgpt.com"
+    "204.12.192.222 api.openai.com"
+    "204.12.192.222 auth.openai.com"
+    "204.12.192.222 auth0.openai.com"
+    "204.12.192.222 cdn.auth0.com"
+    "204.12.192.222 cdn.oaistatic.com"
+    "204.12.192.222 chatgpt.com"
+    "204.12.192.222 files.oaiusercontent.com"
+    "204.12.192.222 platform.openai.com"
+    "204.12.192.222 tcr9i.chat.openai.com"
+    "204.12.192.222 webrtc.chatgpt.com"
+    "204.12.192.222 www-growth.scdn.co"
+  )
+
+  for entry in "${HOST_ENTRIES[@]}"; do
+    if ! grep -qF "$entry" /etc/hosts; then
+      echo "$entry" | sudo tee -a /etc/hosts > /dev/null
+      echo -e "${GREEN}❯ Added: $entry${RESET}"
+    else
+      echo -e "${GREEN}❯ Already exists: $entry${RESET}"
+    fi
+  done
+
   echo ""
 
   echo -e "❯ Install flatpak overrides..."
@@ -94,8 +114,8 @@ complete:
   read answer
 
   if [[ "$answer" == "y" || "$answer" == "Y" ]]; then
-    echo "❯ Installing zapret..."
-    just --justfile /usr/share/ublue-os/just/60-custom.just zapret
+    echo "❯ Installing..."
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/Snowy-Fluffy/zapret.installer/refs/heads/main/installer.sh)"
     echo ""
   else
     echo ""
