@@ -6,6 +6,7 @@ image-version: latest
 
 modules:
   - from-file: common-repository.yml
+  - from-file: common-cleanup.yml
   - from-file: common-packages.yml
   - from-file: common-homebrew.yml
   - from-file: common-flatpaks.yml
