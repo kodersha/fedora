@@ -1,27 +1,20 @@
 type: rpm-ostree
 install:
   # ======================================
-  - libappstream-glib
-  - libxcrypt-compat
-  - perl-interpreter
   - podman-compose
   - p7zip
   - unrar
-  - zstd
   # ======================================
   - fuse-sshfs
   - fastfetch
   - topgrade
   - gitui
-  - just
-  - btop
   - zsh
   - gh
   # ======================================
   - celluloid
   - flatseal
   - openrgb
-  - catfish
   - loupe
   - code
   # ======================================
