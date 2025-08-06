@@ -172,6 +172,7 @@ remove:
   - gnome-remote-desktop
   - gnome-backgrounds
   - gnome-system-monitor
+  - gnome-software
   - gnome-tour
   - malcontent-control
   - malcontent-ui-libs
