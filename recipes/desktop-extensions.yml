@@ -1,10 +1,12 @@
 type: gnome-extensions
 install:
+  - 7065 # tiling-shell
+  - 4994 # dash2dock-lite
   - 4691 # pip-on-top
   - 4269 # alphabetical-app-grid
+  - 3843 # just-perfection
   - 3193 # blur-my-shell
-  - 1460 # vitals
   - 1160 # dash-to-panel
+  - 841  # freon
   - 615  # appindicator
-  - 307  # dash-to-dock
   - 19   # user-themes
