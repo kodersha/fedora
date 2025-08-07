@@ -2,4 +2,3 @@ type: default-flatpaks
 configurations:
   - notify: false
     scope: system
-  - scope: user
