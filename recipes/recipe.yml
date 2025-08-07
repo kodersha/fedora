@@ -6,9 +6,17 @@ image-version: latest
 
 modules:
   - from-file: common-repository.yml
-  - from-file: common-cleanup.yml
   - from-file: common-packages.yml
+  - from-file: common-cleanup.yml
+
+  - from-file: desktop-extensions.yml
+  - from-file: desktop-gschema.yml
+  - from-file: desktop-scripts.yml
+
   - from-file: common-homebrew.yml
   - from-file: common-flatpaks.yml
+  - from-file: common-fonts.yml
   - from-file: common-files.yml
+
+  - from-file: common-scripts.yml
   - from-file: common-signing.yml
