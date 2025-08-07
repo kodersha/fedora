@@ -1,6 +1,5 @@
 type: script
 snippets:
   - "if ! grep \"VARIANT\" /etc/os-release; then echo \"VARIANT=\\\"Silverblue\\\"\" >> /usr/lib/os-release; fi"
-  - "$(curl -fsSL https://raw.githubusercontent.com/Snowy-Fluffy/zapret.installer/refs/heads/main/installer.sh)"
 scripts:
   - complete.sh
