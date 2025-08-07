@@ -16,8 +16,10 @@ remove:
   - open-vm-tools-desktop
   - spice-vdagent
   - spice-webdavd
-  - vim-data
+  - vim-enhanced
   - vim-minimal
+  - vim-common
+  - vim-data
   - qemu-guest-agent
   - virtualbox-guest-additions
   # ======================================
@@ -183,11 +185,13 @@ remove:
   - gnome-system-monitor
   - gnome-software
   - gnome-tour
+  - desktop-backgrounds-gnome
   - malcontent-control
   - malcontent-ui-libs
-  - vim-enhanced
-  - vim-common
   - rygel
   - nvtop
   - htop
+  # ======================================
+  - f42-backgrounds-base
+  - f42-backgrounds-gnome
   # ======================================
