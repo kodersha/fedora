@@ -1,20 +1,21 @@
 type: rpm-ostree
 install:
   # ======================================
-  - podman-compose
   - p7zip
   - unrar
   # ======================================
+  - podman-compose
   - fuse-sshfs
   - fastfetch
   - topgrade
   - gitui
+  - code
   - zsh
   - gh
   # ======================================
+  - steam-devices
+  - lm_sensors
   - openrgb
-  - code
   # ======================================
   - hunspell-ru
   # ======================================
-  - steam-devices
