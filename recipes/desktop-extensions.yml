@@ -6,6 +6,7 @@ install:
   - 4269 # alphabetical-app-grid
   - 3843 # just-perfection
   - 3193 # blur-my-shell
+  - 1514 # rounded-corners
   - 1160 # dash-to-panel
   - 841  # freon
   - 615  # appindicator
