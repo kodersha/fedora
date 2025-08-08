@@ -20,5 +20,4 @@ install:
   - cachyos-ananicy-rules
   - cachyos-settings
   - ananicy-cpp
-  - uksmd
   # ======================================
