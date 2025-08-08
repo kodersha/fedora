@@ -9,7 +9,6 @@ remove:
   - kernel-modules
   - kernel-modules-core
   - kernel-modules-extra
-  - kernel-devel-matched
   - zram-generator-defaults
   - kmod-nvidia
   # ======================================
