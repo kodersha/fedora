@@ -1,6 +1,5 @@
 type: rpm-ostree
 repos:
-  - https://negativo17.org/repos/fedora-nvidia.repo
   - https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/repo/fedora-42/bieszczaders-kernel-cachyos-fedora-42.repo
   - https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-addons/repo/fedora-42/bieszczaders-kernel-cachyos-addons-fedora-42.repo
 remove:
@@ -17,14 +16,9 @@ remove:
 install:
   # ======================================
   - kernel-cachyos
+  - kernel-cachyos-nvidia-open
   - cachyos-ananicy-rules
   - cachyos-settings
   - ananicy-cpp
   - uksmd
-  # ======================================
-  - nvidia-settings 
-  - nvidia-driver
-  - nvidia-driver-libs
-  - nvidia-driver-cuda
-  - nvidia-driver-cuda-libs
   # ======================================
