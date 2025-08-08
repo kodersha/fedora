@@ -188,6 +188,9 @@ remove:
   - desktop-backgrounds-gnome
   - malcontent-control
   - malcontent-ui-libs
+  - yelp-libs
+  - yelp-xsl
+  - yelp
   - rygel
   - nvtop
   - htop
