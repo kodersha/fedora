@@ -175,6 +175,7 @@ remove:
   - gnome-shell-extension-background-logo
   - gnome-shell-extension-common
   - gnome-shell-extension-launch-new-instance
+  - gnome-shell-extension-supergfxctl-gex
   - gnome-shell-extension-places-menu
   - gnome-shell-extension-window-list
   - gnome-classic-session
