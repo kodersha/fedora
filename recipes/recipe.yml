@@ -1,7 +1,7 @@
 name: fedora
 description: This is fedora image.
 
-base-image: ghcr.io/ublue-os/silverblue-main
+base-image: ghcr.io/ublue-os/silverblue-nvidia
 image-version: latest
 
 modules:
