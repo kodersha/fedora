@@ -1,4 +1,0 @@
-type: akmods
-base: main
-install:
-  - nvidia
