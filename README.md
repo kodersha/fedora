@@ -22,13 +22,6 @@ Reboot again to complete the installation:
 systemctl reboot
 ```
 
-### Complete
-
-To complete installation, run command:
-```bash
-just complete
-```
-
 ## ISO
 
 ```bash
