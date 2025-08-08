@@ -22,6 +22,10 @@ install:
   - ananicy-cpp
   - uksmd
   # ======================================
-  - nvidia-driver
   - nvidia-settings 
+  - nvidia-open-kmod
+  - nvidia-driver
+  - nvidia-driver-libs
+  - nvidia-driver-cuda
+  - nvidia-driver-cuda-libs
   # ======================================
