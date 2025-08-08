@@ -1,6 +1,0 @@
-type: kargs
-arch: x86_64, aarch64 # only inject kernel arguments to these specific OS architectures
-kargs:
-  - rd.driver.blacklist=nouveau,nova_core 
-  - modprobe.blacklist=nouveau 
-  - nvidia-drm.modeset=1
