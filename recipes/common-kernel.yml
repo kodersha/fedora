@@ -12,7 +12,6 @@ remove:
   - kernel-devel-matched
   # ======================================
   - zram-generator-defaults
-  - kmod-nvidia
   # ======================================
 install:
   # ======================================
