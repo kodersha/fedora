@@ -6,8 +6,8 @@ system:
     - avahi-daemon
     - firewalld
   enabled:
+    - ananicy-cpp
     - uksmd
-    - scx
 user:
   enabled:
     - podman
