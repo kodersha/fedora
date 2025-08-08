@@ -2,7 +2,6 @@ type: rpm-ostree
 repos:
   - https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/repo/fedora-42/bieszczaders-kernel-cachyos-fedora-42.repo
   - https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-addons/repo/fedora-42/bieszczaders-kernel-cachyos-addons-fedora-42.repo
-  - https://raw.githubusercontent.com/rpmfusion/rpmfusion-nonfree-release/refs/heads/master/rpmfusion-nonfree-tainted.repo
 remove:
   # ======================================
   - kernel
@@ -19,7 +18,6 @@ install:
   - kernel-cachyos-nvidia-open
   - cachyos-ananicy-rules
   - cachyos-settings
-  - akmod-nvidia-open
   - ananicy-cpp
   - uksmd
   # ======================================
