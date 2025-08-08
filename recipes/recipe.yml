@@ -10,7 +10,6 @@ modules:
   - from-file: common-cleanup.yml
 
   - from-file: common-kernel.yml
-  - from-file: common-kargs.yml
 
   - from-file: desktop-extensions.yml
   - from-file: desktop-gschema.yml
