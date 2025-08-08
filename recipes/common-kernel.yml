@@ -16,7 +16,7 @@ remove:
 install:
   # ======================================
   - kernel-cachyos
-  - kernel-cachyos-nvidia
+  - kernel-cachyos-nvidia-open
   - cachyos-ananicy-rules
   - cachyos-settings
   - ananicy-cpp
