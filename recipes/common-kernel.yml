@@ -5,7 +5,7 @@ remove:
   - kernel 
   - kernel-core
   - kernel-modules 
-  - ernel-modules-core
+  - kernel-modules-core
   - kernel-modules-extra 
 install:
   - kernel-cachyos
