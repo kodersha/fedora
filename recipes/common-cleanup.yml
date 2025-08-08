@@ -176,7 +176,6 @@ remove:
   - gnome-shell-extension-common
   - gnome-shell-extension-launch-new-instance
   - gnome-shell-extension-places-menu
-  - gnome-shell-extension-supergfxctl-gex
   - gnome-shell-extension-window-list
   - gnome-classic-session
   - gnome-browser-connector
