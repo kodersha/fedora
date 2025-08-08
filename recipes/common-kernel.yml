@@ -11,11 +11,12 @@ remove:
   - kernel-modules-extra
   - kernel-devel-matched
   - zram-generator-defaults
+  - kmod-nvidia
   # ======================================
 install:
   # ======================================
   - kernel-cachyos
-  - kernel-cachyos-nvidia-open
+  - kernel-cachyos-nvidia
   - cachyos-ananicy-rules
   - cachyos-settings
   - ananicy-cpp
