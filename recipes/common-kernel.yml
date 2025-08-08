@@ -23,7 +23,6 @@ install:
   - uksmd
   # ======================================
   - nvidia-settings 
-  - nvidia-open-kmod
   - nvidia-driver
   - nvidia-driver-libs
   - nvidia-driver-cuda
