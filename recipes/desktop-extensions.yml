@@ -1,7 +1,5 @@
 type: gnome-extensions
 install:
-  - 7065 # tiling-shell
-  - 7048 # rounded-window-corners-reborn
   - 4994 # dash2dock-lite
   - 4691 # pip-on-top
   - 4269 # alphabetical-app-grid
