@@ -1,7 +1,7 @@
 type: rpm-ostree
 repos:
-  - https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/repo/fedora-42/bieszczaders-kernel-cachyos-fedora-42.repo
-  - https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-addons/repo/fedora-42/bieszczaders-kernel-cachyos-addons-fedora-42.repo
+  - https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos/repo/fedora-%OS_VERSION%/bieszczaders-kernel-cachyos-fedora-%OS_VERSION%.repo
+  - https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-addons/repo/fedora-%OS_VERSION%/bieszczaders-kernel-cachyos-addons-fedora-%OS_VERSION%.repo
 remove:
   # ======================================
   - kernel
