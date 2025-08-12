@@ -9,8 +9,6 @@ modules:
   - from-file: common-packages.yml
   - from-file: common-cleanup.yml
 
-  - from-file: common-kernel.yml
-
   - from-file: desktop-extensions.yml
   - from-file: desktop-gschema.yml
   - from-file: desktop-scripts.yml
