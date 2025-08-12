@@ -1,11 +1,7 @@
 type: systemd
 system:
   disabled:
-    - avahi-daemon.socket
-    - avahi-daemon
     - firewalld
-  enabled:
-    - ananicy-cpp
 user:
   enabled:
     - podman
