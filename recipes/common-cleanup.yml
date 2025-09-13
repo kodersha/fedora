@@ -180,6 +180,7 @@ remove:
   - gnome-remote-desktop
   - gnome-backgrounds
   - gnome-system-monitor
+  - gnome-software-rpm-ostree
   - gnome-software
   - gnome-tour
   - desktop-backgrounds-gnome
