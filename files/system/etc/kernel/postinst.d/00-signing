@@ -1,0 +1,26 @@
+#!/bin/sh
+
+set -e
+
+KERNEL_IMAGE="$2"
+MOK_KEY_NICKNAME="CachyOS Secure Boot"
+
+if [ "$#" -ne "2" ] ; then
+	echo "Wrong count of command line arguments. This is not meant to be called directly." >&2
+	exit 1
+fi
+
+if [ ! -x "$(command -v pesign)" ] ; then
+	echo "pesign not executable. Bailing." >&2
+	exit 1
+fi
+
+if [ ! -w "$KERNEL_IMAGE" ] ; then
+	echo "Kernel image $KERNEL_IMAGE is not writable." >&2
+	exit 1
+fi
+
+echo "Signing $KERNEL_IMAGE..."
+
+pesign --certificate "$MOK_KEY_NICKNAME" --in "$KERNEL_IMAGE" --sign --out "$KERNEL_IMAGE.signed"
+mv "$KERNEL_IMAGE.signed" "$KERNEL_IMAGE"
