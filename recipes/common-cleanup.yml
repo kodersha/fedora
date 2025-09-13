@@ -9,6 +9,7 @@ remove:
   - fedora-chromium-config
   - fedora-chromium-config-gnome
   - fedora-workstation-backgrounds
+  - fedora-flathub-remote
   # ======================================
   - orca
   - toolbox
@@ -69,6 +70,7 @@ remove:
   - default-fonts-bo
   - default-fonts-br
   - default-fonts-chr
+  - default-fonts-cjk-sans
   - default-fonts-cjk-mono
   - default-fonts-cjk-serif
   - default-fonts-dv
@@ -190,6 +192,7 @@ remove:
   - yelp-xsl
   - yelp
   - rygel
+  - totem-video-thumbnailer
   # ======================================
   - f42-backgrounds-base
   - f42-backgrounds-gnome
