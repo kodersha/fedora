@@ -18,7 +18,6 @@ remove:
   - spice-webdavd
   - vim-enhanced
   - vim-minimal
-  - vim-common
   - vim-data
   - qemu-guest-agent
   - virtualbox-guest-additions
