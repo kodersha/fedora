@@ -1,9 +1,6 @@
 type: rpm-ostree
 remove:
   # ======================================
-  - ublue-os-just
-  - just
-  # ======================================
   - firefox
   - firefox-langpacks
   - mozilla-filesystem
