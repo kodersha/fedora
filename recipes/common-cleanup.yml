@@ -16,7 +16,6 @@ remove:
   - open-vm-tools-desktop
   - spice-vdagent
   - spice-webdavd
-  - vim-enhanced
   - vim-minimal
   - vim-data
   - qemu-guest-agent
