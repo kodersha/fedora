@@ -191,7 +191,6 @@ remove:
   - yelp-xsl
   - yelp
   - rygel
-  - nvtop
   # ======================================
   - f42-backgrounds-base
   - f42-backgrounds-gnome
