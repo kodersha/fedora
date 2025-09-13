@@ -12,6 +12,8 @@ modules:
   - from-file: common-kernel.yml
   - from-file: common-kargs.yml
 
+  - from-file: modules-nvidia.yml
+
   - from-file: desktop-extensions.yml
   - from-file: desktop-gschema.yml
   - from-file: desktop-scripts.yml
