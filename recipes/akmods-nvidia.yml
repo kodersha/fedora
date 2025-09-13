@@ -1,0 +1,3 @@
+type: akmods
+source: ghcr.io/ublue-os/modules/akmods:nvidia-open
+nvidia-driver: nvidia-open
