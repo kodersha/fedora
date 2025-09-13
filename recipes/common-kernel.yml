@@ -19,3 +19,7 @@ install:
   - cachyos-settings
   - ananicy-cpp
   # ======================================
+  - akmod-nvidia
+  - xorg-x11-drv-nvidia
+  - xorg-x11-drv-nvidia-cuda
+  # ======================================
