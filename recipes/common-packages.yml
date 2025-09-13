@@ -8,10 +8,8 @@ install:
   - fuse-sshfs
   - fastfetch
   - topgrade
-  - gitui
   - code
   - zsh
-  - gh
   # ======================================
   - lm_sensors
   # ======================================
