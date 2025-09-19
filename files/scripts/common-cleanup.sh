@@ -30,3 +30,5 @@ systemctl mask tracker-miner-fs
 systemctl mask tracker-store
 
 systemctl mask systemd-udev-settle
+
+ln -sf ../run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
