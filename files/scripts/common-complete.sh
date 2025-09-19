@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-
 set -oue pipefail
 
-akmods --force
-dracut --force
+# Rebuild kernel modules (e.g. NVIDIA) for the current kernel
+akmods --force --kernels "$(uname -r)"
 
-ln -sf ../run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+# Update initramfs for the current kernel only
+dracut -f "/boot/initramfs-$(uname -r).img" "$(uname -r)"
