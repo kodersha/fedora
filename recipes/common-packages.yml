@@ -1,0 +1,49 @@
+modules:
+  - type: dnf
+    repos:
+      cleanup: true
+      files:
+        - https://raw.githubusercontent.com/kodersha/fedora/refs/heads/main/sources/repos/microsoft-vscode.repo
+      copr:
+        - trixieua/mutter-patched
+        - kodersha/fedora
+      nonfree: rpmfusion
+
+    install:
+      allow-erasing: true
+      install-weak-deps: false
+      skip-unavailable: true
+      packages:
+        - gnome-tweaks
+        - hunspell-ru
+        - lm_sensors
+        - p7zip
+        - unrar
+        - podman-compose
+        - topgrade
+        - fastfetch
+        - zsh
+        - code
+
+        - ffmpeg
+        - ffmpegthumbnailer
+        - mesa-va-drivers-freeworld
+        - libavcodec-freeworld
+        - gstreamer1-plugin-libav
+        - gstreamer1-plugins-bad-free-extras
+        - gstreamer1-plugins-bad-freeworld
+        - gstreamer1-plugins-ugly
+        - gstreamer1-vaapi
+        - libheif-freeworld
+        - intel-media-driver
+
+    replace:
+    - from-repo: copr:copr.fedorainfracloud.org:trixieua:mutter-patched
+      skip-unavailable: true
+      packages:
+        - gdm
+        - gnome-shell
+        - gnome-shell-common 
+        - mutter
+        - mutter-common
+        - xorg-x11-server-Xwayland
