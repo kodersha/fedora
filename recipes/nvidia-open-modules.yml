@@ -11,3 +11,16 @@ modules:
   - type: script
     scripts:
       - nvidia-complete.sh
+
+  - type: dnf
+    repos:
+      cleanup: false
+      copr:
+        - bieszczaders/kernel-cachyos-addons
+        - bieszczaders/kernel-cachyos
+    install:
+      allow-erasing: true
+      install-weak-deps: false
+      skip-unavailable: true      
+      packages:
+        - kernel-cachyos-nvidia-open
