@@ -26,7 +26,6 @@ modules:
         - cachyos-ksm-settings
         - cachyos-settings
         - kernel-cachyos
-        - kernel-cachyos-nvidia-open
         - scx-scheds
 
   - type: systemd
