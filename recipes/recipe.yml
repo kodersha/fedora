@@ -13,8 +13,8 @@ modules:
   - from-file: common-fonts.yml
   - from-file: common-files.yml
 
-  - from-file: nvidia-akmod.yml
   - from-file: kernel-cachyos.yml
+  - from-file: nvidia-akmod.yml
 
   - from-file: common-systemd.yml
   - from-file: common-scripts.yml
