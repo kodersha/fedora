@@ -1,16 +1,23 @@
 modules:
   - type: dnf
     repos:
-      cleanup: true
+      cleanup: false
       nonfree: rpmfusion
 
     install:
-      allow-erasing: true
+      allow-erasing: false
       install-weak-deps: false
       skip-unavailable: true
       packages:
         - rpmfusion-free-release-tainted
         - rpmfusion-nonfree-release-tainted
-        
+
+
+  - type: dnf
+    install:
+      allow-erasing: true
+      install-weak-deps: false
+      skip-unavailable: true
+      packages: 
         - akmod-nvidia-open 
         - xorg-x11-drv-nvidia-open
