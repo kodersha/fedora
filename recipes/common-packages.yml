@@ -38,8 +38,6 @@ modules:
         - libheif-freeworld
         - intel-media-driver
 
-        - adw-gtk3-theme
-
     replace:
     - from-repo: copr:copr.fedorainfracloud.org:trixieua:mutter-patched
       skip-unavailable: true
