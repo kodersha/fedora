@@ -14,9 +14,10 @@ modules:
         - akmod-nvidia
         - xorg-x11-drv-nvidia
         - xorg-x11-drv-nvidia-cuda
+        - kernel-cachyos
+        - kernel-cachyos-devel-matched
         - cachyos-ksm-settings
         - cachyos-settings
-        - kernel-cachyos
         - scx-scheds
 
   - type: initramfs
