@@ -2,7 +2,8 @@ modules:
   - type: dnf
     repos:
       cleanup: true
-      nonfree: release-tainted
+      files:
+        - https://fr2.rpmfind.net/linux/rpmfusion/nonfree/fedora/releases/42/Everything/x86_64/os/Packages/r/rpmfusion-nonfree-release-tainted-42-1.noarch.rpm
 
     install:
       allow-erasing: true
