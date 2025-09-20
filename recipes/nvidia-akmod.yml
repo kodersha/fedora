@@ -19,5 +19,4 @@ modules:
       install-weak-deps: false
       skip-unavailable: true
       packages: 
-        - akmod-nvidia-open 
-        - xorg-x11-drv-nvidia-open
+        - akmod-nvidia-open
