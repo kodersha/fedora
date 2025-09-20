@@ -2,7 +2,7 @@ modules:
   - type: dnf
     repos:
       cleanup: true
-      nonfree: rpmfusion
+      nonfree: rpmfusion-nonfree-release-tainted
 
     install:
       allow-erasing: true
