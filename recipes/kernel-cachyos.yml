@@ -7,7 +7,7 @@ modules:
         - bieszczaders/kernel-cachyos
       nonfree: rpmfusion
     install:
-      allow-erasing: true
+      allow-erasing: false
       install-weak-deps: false
       skip-unavailable: true      
       packages:
