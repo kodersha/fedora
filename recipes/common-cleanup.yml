@@ -199,8 +199,8 @@ modules:
         - yelp
         - yelp-libs
         - yelp-xsl
+        - ptyxis
         # ======================================
-
   - type: script
     scripts:
       - common-cleanup.sh
