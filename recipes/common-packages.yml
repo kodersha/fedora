@@ -14,7 +14,7 @@ modules:
       install-weak-deps: false
       skip-unavailable: true
       packages:
-        - dconf-editor
+        - gnome-terminal
         - gnome-tweaks
         - hunspell-ru
         - lm_sensors
