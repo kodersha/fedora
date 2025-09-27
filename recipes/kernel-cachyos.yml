@@ -27,9 +27,10 @@ modules:
         - kernel-cachyos-devel-matched
         - cachyos-ksm-settings
         - cachyos-settings
-        - scx-scheds
+        - cachyos-ananicy-rules
+        - ananicy-cpp
 
   - type: systemd
     system:
       enabled:
-      - scx_loader.service
+      - ananicy-cpp
