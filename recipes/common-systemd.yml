@@ -1,0 +1,7 @@
+type: systemd
+system:
+  disabled:
+    - firewalld
+user:
+  enabled:
+    - podman

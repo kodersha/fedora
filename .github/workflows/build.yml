@@ -1,0 +1,62 @@
+name: Bluebuild
+on:
+  schedule:
+    - cron:
+        "00 22 * * *"
+  workflow_dispatch:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
+  cancel-in-progress: true
+jobs:
+  cleanup:
+    name: Cleanup Workflow Runs
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: read
+    steps:
+      - name: Cleanup Workflow Runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 0
+          keep_minimum_runs: 0
+  bluebuild:
+    name: Build Custom Image
+    runs-on: ubuntu-latest
+    needs: cleanup
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
+    strategy:
+      fail-fast: false
+      matrix:
+        recipe:
+          - recipe.yml
+    steps:
+      # the build is fully handled by the reusable github action
+      - name: Build Custom Image
+        uses: blue-build/github-action@v1.9
+        with:
+          recipe: ${{ matrix.recipe }}
+          cosign_private_key: ${{ secrets.SIGNING_SECRET }}
+          registry_token: ${{ github.token }}
+          pr_event_number: ${{ github.event.number }}
+
+          # enabled by default, disable if your image is small and you want faster builds
+          maximize_build_space: true
+  cleanup-packages:
+    name: Cleanup Packages
+    runs-on: ubuntu-latest
+    needs: bluebuild
+    permissions:
+      packages: write
+    steps:
+    - name: Cleanup Packages
+      uses: actions/delete-package-versions@v5.0.0
+      with: 
+        package-name: 'fedora'
+        package-type: 'container'
+        min-versions-to-keep: 12
