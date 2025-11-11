@@ -37,8 +37,3 @@ modules:
         - libimobiledevice
         - gvfs-afc
         - ifuse
-
-  - type: dnf
-    repos:
-      cleanup: false
-      nonfree: rpmfusion
