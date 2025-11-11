@@ -37,3 +37,7 @@ modules:
         - libimobiledevice
         - gvfs-afc
         - ifuse
+
+        - tor
+        - torsocks
+        - obfs4
