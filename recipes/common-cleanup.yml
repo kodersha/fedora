@@ -14,8 +14,8 @@ modules:
         - fedora-chromium-config-gnome
         - fedora-workstation-backgrounds
         # ======================================
-        - f43-backgrounds-base
-        - f43-backgrounds-gnome
+        - f42-backgrounds-base
+        - f42-backgrounds-gnome
         # ======================================
         - open-vm-tools
         - open-vm-tools-desktop
