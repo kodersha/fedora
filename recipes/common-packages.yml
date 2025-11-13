@@ -27,7 +27,11 @@ modules:
         - mesa-va-drivers-freeworld
         - libavcodec-freeworld
         - libheif-freeworld
+        - intel-compute-runtime
         - intel-media-driver
+        - intel-level-zero
+        - intel-opencl
+        - libva-utils
         - gstreamer1-plugin-libav
         - gstreamer1-plugins-bad-free-extras
         - gstreamer1-plugins-bad-freeworld
