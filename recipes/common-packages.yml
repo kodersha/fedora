@@ -48,3 +48,5 @@ modules:
         - steam
         - bottles
         - protontricks
+        - gamescope
+        - gamemode
