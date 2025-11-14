@@ -37,6 +37,10 @@ modules:
         - intel-media-driver
         - intel-level-zero
         - intel-opencl
+
+        - mesa-dri-drivers
+        - mesa-libGL
+        - libva-intel-driver
         - libva-utils
 
         - libimobiledevice
@@ -44,9 +48,3 @@ modules:
         - ifuse
 
         - fuse-sshfs
-
-        - steam
-        - bottles
-        - protontricks
-        - gamescope
-        - gamemode
