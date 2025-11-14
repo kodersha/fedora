@@ -44,3 +44,7 @@ modules:
         - ifuse
 
         - fuse-sshfs
+
+        - steam
+        - bottles
+        - protontricks
