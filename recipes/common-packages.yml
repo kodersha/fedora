@@ -52,10 +52,3 @@ modules:
         - ifuse
 
         - fuse-sshfs
-
-        - protontricks
-        - portproton
-        - gamemode
-        - mangohud
-        - bottles
-        - steam
