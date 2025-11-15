@@ -33,18 +33,27 @@ modules:
         - gstreamer1-plugins-ugly
         - gstreamer1-vaapi
 
-        - intel-compute-runtime
-        - intel-media-driver
-        - intel-level-zero
-        - intel-opencl
-
         - mesa-dri-drivers
-        - mesa-libGL
+        - mesa-vulkan-drivers
+        - intel-media-driver
+        - intel-media-driver-non-free
         - libva-intel-driver
         - libva-utils
+        - libvkd3d
+        - vulkan-tools
+
+        - intel-compute-runtime
+        - intel-opencl
+        - intel-level-zero
 
         - libimobiledevice
         - gvfs-afc
         - ifuse
 
         - fuse-sshfs
+
+        - protontricks
+        - gamemode
+        - mangohud
+        - bottles
+        - steam
