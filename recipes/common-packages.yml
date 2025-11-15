@@ -6,6 +6,7 @@ modules:
         - https://raw.githubusercontent.com/kodersha/fedora/refs/heads/main/sources/repos/microsoft-vscode.repo
       copr:
         - kodersha/fedora
+        - boria138/portproton
       nonfree: rpmfusion
 
     install:
@@ -53,6 +54,7 @@ modules:
         - fuse-sshfs
 
         - protontricks
+        - portproton
         - gamemode
         - mangohud
         - bottles
