@@ -34,3 +34,9 @@ modules:
     system:
       enabled:
       - ananicy-cpp
+
+  - type: kargs
+    kargs:
+      - i915.force_probe=!7d55
+      - xe.force_probe=7d55
+      - mitigations=on
