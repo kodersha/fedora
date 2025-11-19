@@ -1,0 +1,53 @@
+modules:
+  - type: dnf
+    repos:
+      cleanup: true
+      files:
+        - https://raw.githubusercontent.com/kodersha/fedora/refs/heads/main/sources/repos/microsoft-vscode.repo
+      copr:
+        - kodersha/fedora
+      nonfree: rpmfusion
+
+    install:
+      allow-erasing: true
+      install-weak-deps: false
+      skip-unavailable: true
+      packages:
+        - gnome-tweaks
+        - hunspell-ru
+        - lm_sensors
+        - podman-compose
+        - code
+        - fastfetch
+        - topgrade
+        - zsh
+
+        - ffmpeg
+        - ffmpegthumbnailer
+        - mesa-va-drivers-freeworld
+        - libavcodec-freeworld
+        - libheif-freeworld
+        - gstreamer1-plugin-libav
+        - gstreamer1-plugins-bad-free-extras
+        - gstreamer1-plugins-bad-freeworld
+        - gstreamer1-plugins-ugly
+        - gstreamer1-vaapi
+
+        - mesa-dri-drivers
+        - mesa-vulkan-drivers
+        - intel-media-driver
+        - intel-media-driver-non-free
+        - libva-intel-driver
+        - libva-utils
+        - libvkd3d
+        - vulkan-tools
+
+        - intel-compute-runtime
+        - intel-opencl
+        - intel-level-zero
+
+        - libimobiledevice
+        - gvfs-afc
+        - ifuse
+
+        - fuse-sshfs

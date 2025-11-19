@@ -1,0 +1,9 @@
+modules:
+  - type: containerfile
+    snippets:
+      - COPY --from=ghcr.io/ublue-os/akmods:main-43 /kernel-rpms /tmp/rpms/kernel
+
+  - type: script
+    scripts:
+      - kernel-fixupstream.sh
+      - kernel-installsigned.sh

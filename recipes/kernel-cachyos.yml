@@ -1,0 +1,42 @@
+modules:
+  - type: dnf
+    remove:
+      packages:
+        - kernel
+        - kernel-core
+        - kernel-modules
+        - kernel-modules-core
+        - kernel-modules-extra
+
+  - type: script
+    snippets:
+      - 'rm -drf /usr/lib/modules/*'
+
+  - type: dnf
+    repos:
+      cleanup: true
+      copr:
+        - bieszczaders/kernel-cachyos-addons
+        - bieszczaders/kernel-cachyos
+    install:
+      allow-erasing: true
+      install-weak-deps: false
+      skip-unavailable: true      
+      packages:
+        - kernel-cachyos
+        - kernel-cachyos-devel-matched
+        - cachyos-ksm-settings
+        - cachyos-settings
+        - cachyos-ananicy-rules
+        - ananicy-cpp
+
+  - type: systemd
+    system:
+      enabled:
+      - ananicy-cpp
+
+  - type: kargs
+    kargs:
+      - i915.force_probe=!7d55
+      - xe.force_probe=7d55
+      - mitigations=on
