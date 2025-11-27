@@ -29,16 +29,12 @@ modules:
         - gstreamer1-plugins-bad-free-extras
         - gstreamer1-plugins-bad-freeworld
         - gstreamer1-plugins-ugly
-        - gstreamer1-plugin-libav
         - gstreamer1-vaapi
 
         - mesa-va-drivers-freeworld
-        - mesa-vulkan-drivers
-        - mesa-dri-drivers
         - libva-utils
         - libvkd3d
         - libvpl-tools
-        - libvpl
         - vulkan-tools
         - clinfo
 
@@ -46,14 +42,10 @@ modules:
         - intel-media-driver
         - intel-level-zero
         - intel-level-zero-gpu-raytracing
-        - intel-level-zero-gpu-devel
-        - intel-metrics-discovery
         - intel-opencl
         - intel-lpmd
         - intel-igc
-
-        - libimobiledevice
-        - gvfs-afc
+        
         - ifuse
-
+        
         - fuse-sshfs
