@@ -10,7 +10,7 @@ modules:
 
     install:
       allow-erasing: true
-      install-weak-deps: false
+      install-weak-deps: true
       skip-unavailable: true
       packages:
         - gnome-tweaks
@@ -35,18 +35,22 @@ modules:
         - mesa-va-drivers-freeworld
         - mesa-vulkan-drivers
         - mesa-dri-drivers
-        - libva-intel-driver
         - libva-utils
         - libvkd3d
+        - libvpl-tools
+        - libvpl
         - vulkan-tools
+        - clinfo
 
         - intel-compute-runtime
         - intel-media-driver
-        - intel-media-driver-non-free
         - intel-level-zero
         - intel-level-zero-gpu-raytracing
+        - intel-level-zero-gpu-devel
+        - intel-metrics-discovery
         - intel-opencl
         - intel-lpmd
+        - intel-igc
 
         - libimobiledevice
         - gvfs-afc
