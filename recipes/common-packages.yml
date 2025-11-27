@@ -24,7 +24,6 @@ modules:
 
         - ffmpeg
         - ffmpegthumbnailer
-        - mesa-va-drivers-freeworld
         - libavcodec-freeworld
         - libheif-freeworld
         - gstreamer1-plugin-libav
@@ -33,18 +32,20 @@ modules:
         - gstreamer1-plugins-ugly
         - gstreamer1-vaapi
 
-        - mesa-dri-drivers
+        - mesa-va-drivers-freeworld
         - mesa-vulkan-drivers
-        - intel-media-driver
-        - intel-media-driver-non-free
+        - mesa-dri-drivers
         - libva-intel-driver
         - libva-utils
         - libvkd3d
         - vulkan-tools
 
         - intel-compute-runtime
-        - intel-opencl
+        - intel-media-driver
+        - intel-media-driver-non-free
         - intel-level-zero
+        - intel-opencl
+        - intel-lpmd
 
         - libimobiledevice
         - gvfs-afc
