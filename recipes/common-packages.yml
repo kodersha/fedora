@@ -49,3 +49,5 @@ modules:
         - ifuse
         
         - fuse-sshfs
+
+        - blender
