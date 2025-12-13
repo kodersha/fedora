@@ -36,13 +36,13 @@ modules:
         - libvkd3d
         - libvpl-tools
         - vulkan-tools
+        - ocl-icd
         - clinfo
 
         - intel-compute-runtime
         - intel-media-driver
         - intel-level-zero
         - intel-level-zero-gpu-raytracing
-        - intel-opencl
         - intel-lpmd
         - intel-igc
         
