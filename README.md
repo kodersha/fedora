@@ -1,5 +1,7 @@
 # fedora &nbsp; [![build-ublue](https://github.com/kodersha/fedora/actions/workflows/build.yml/badge.svg)](https://github.com/kodersha/fedora/actions/workflows/build.yml)
 
+![](https://raw.githubusercontent.com/kodersha/fedora/refs/heads/main/.resources/cover.png)
+
 ## Installation
 
 To rebase an existing atomic Fedora installation to the latest build, first rebase to the unsigned image, to get the proper signing keys and policies installed:
