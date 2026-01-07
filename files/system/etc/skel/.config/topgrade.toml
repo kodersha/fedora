@@ -1,0 +1,16 @@
+[misc]
+pre_sudo = true
+sudo_command = "sudo"
+set_title = true
+display_time = false
+assume_yes = true
+cleanup = true
+
+[brew]
+autoremove = true
+
+[linux]
+rpm_ostree = true
+
+[firmware]
+upgrade = true

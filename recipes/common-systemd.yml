@@ -1,0 +1,9 @@
+type: systemd
+system:
+  disabled:
+    - firewalld
+  enabled:
+    - intel_lpmd
+user:
+  enabled:
+    - podman

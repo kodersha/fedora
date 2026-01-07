@@ -1,0 +1,69 @@
+modules:
+  - type: dnf
+    repos:
+      cleanup: true
+      files:
+        - https://raw.githubusercontent.com/kodersha/fedora/refs/heads/main/sources/repos/microsoft-vscode.repo
+      copr:
+        - kodersha/fedora
+        - holeprof/fedora-extended
+      nonfree: rpmfusion
+
+    install:
+      allow-erasing: true
+      install-weak-deps: false
+      skip-unavailable: true
+      packages:
+        # User interface and desktop utilities
+        - gnome-tweaks
+        - fastfetch
+        
+        # Shell and CLI environment
+        - zsh
+        
+        # Development and DevOps tools
+        - code
+        - podman-compose
+        
+        # System utilities and maintenance
+        - lm_sensors
+        - topgrade
+        
+        # Localization and dictionaries
+        - hunspell-ru
+        
+        # Multimedia (codecs, video, thumbnails)
+        - ffmpeg
+        - ffmpegthumbnailer
+        - libavcodec-freeworld
+        - libheif-freeworld
+        
+        # GStreamer (multimedia framework)
+        - gstreamer1-plugins-bad-free-extras
+        - gstreamer1-plugins-bad-freeworld
+        - gstreamer1-plugins-ugly
+        - gstreamer1-vaapi
+        
+        # Graphics and hardware acceleration (VA-API, Vulkan, OpenCL, VPL)
+        - mesa-va-drivers-freeworld
+        - libva-utils
+        - libvkd3d
+        - libvpl-tools
+        - vulkan-tools
+        - ocl-icd
+        - clinfo
+        - oneapi-level-zero
+        
+        # Intel-specific drivers and runtimes
+        - intel-compute-runtime
+        - intel-media-driver
+        - intel-level-zero
+        - intel-level-zero-gpu-raytracing
+        - intel-lpmd
+        - intel-igc
+        - intel-npu-driver
+        
+        # File synchronization and remote filesystem access
+        - rclone
+        - ifuse
+        - fuse-sshfs

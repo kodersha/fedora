@@ -1,0 +1,7 @@
+# --- System paths ---
+PATH="/usr/bin:/usr/local/bin:/usr/sbin:/usr/local/sbin"
+SHELL="/bin/zsh"
+
+# --- Homebrew ---
+HOMEBREW_NO_AUTO_UPDATE=1
+HOMEBREW_NO_ANALYTICS=1
