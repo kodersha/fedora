@@ -3,11 +3,6 @@ modules:
     scripts:
       - kernel-cachyos.sh
 
-  - type: systemd
-    system:
-      enabled:
-      - ananicy-cpp
-
 #  - type: dnf
 #    repos:
 #      cleanup: true
