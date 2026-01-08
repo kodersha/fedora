@@ -47,7 +47,7 @@ popd
 dnf5 -y copr enable bieszczaders/kernel-cachyos-addons
 
 # install scx-scheds
-dnf5 -y install scx-scheds
+dnf5 -y install --allowerasing cachyos-ksm-settings cachyos-settings cachyos-ananicy-rules ananicy-cpp
 
 dnf5 -y copr disable bieszczaders/kernel-cachyos
 dnf5 -y copr disable bieszczaders/kernel-cachyos-addons
