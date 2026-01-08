@@ -1,7 +1,14 @@
 type: script
 snippets:
-  # removes all repos except for fedora.repo and fedora-updates.repo
-  - find /etc/yum.repos.d/ -type f -not \( -name fedora.repo -o -name fedora-updates.repo -o -name rpmfusion-free.repo -o -name rpmfusion-free-updates.repo -o -name rpmfusion-nonfree.repo -o -name rpmfusion-nonfree-updates.repo \) -delete
+  - "find /etc/yum.repos.d/ -type f -not \( -name fedora.repo -o -name fedora-updates.repo -o -name rpmfusion-free.repo -o -name rpmfusion-free-updates.repo -o -name rpmfusion-nonfree.repo -o -name rpmfusion-nonfree-updates.repo \) -delete"
+  - "sed -i '/^REDHAT_BUGZILLA_PRODUCT=/d;/^REDHAT_BUGZILLA_PRODUCT_VERSION=/d;/^REDHAT_SUPPORT_PRODUCT=/d;/^REDHAT_SUPPORT_PRODUCT_VERSION=/d;/^SUPPORT_END=/d' /usr/lib/os-release"
+  - "rm -rf /usr/share/doc"
+  - "rm -rf /usr/src"
+  - "rpm --erase --nodeps kernel-cachyos-devel || true"
+  - "rpm --erase --nodeps kernel-cachyos-lts-devel || true"
+  - "rm -f /tmp/ltsbuild"
+  - "dnf5 versionlock clear"
+  - "dnf5 clean all"
 scripts:
   - common-complete.sh
   - image-info.sh
