@@ -7,11 +7,8 @@ modules:
       allow-erasing: true
       install-weak-deps: false
       packages:
-        # Multimedia and VA-API
-        - gstreamer1-plugins-bad-freeworld
-        - gstreamer1-plugins-ugly
-        - gstreamer1-vaapi
-        - ffmpeg-libs
+        - gstreamer1-plugin-vaapi
+        - ffmpeg-libs        
     replace:
       - from-repo: fedora-multimedia
         packages:
@@ -33,31 +30,34 @@ modules:
       nonfree: rpmfusion
       copr:
         - holeprof/fedora-extended
+    replace:
+      - from-repo: rpmfusion
+        packages:
+        - old: ffmpeg-free
+          new: ffmpeg
+        - old: mesa-va-drivers
+          new: mesa-va-drivers-freeworld
+        - old: libavcodec
+          new: libavcodec-freeworld
+      - from-repo: rpmfusion-nonfree
+        packages:
+          - intel-media-driver
     install:
-      allow-erasing: true
       install-weak-deps: false
       packages:
+        - gstreamer1-plugin-libav
+        - gstreamer1-plugins-bad-free-extras
+        - gstreamer1-plugins-bad-freeworld
+        - gstreamer1-plugins-ugly
+        - gstreamer1-vaapi
+        - libheif-freeworld
+        
         # Intel drivers and runtimes for Meteor Lake
         - intel-compute-runtime
         - intel-level-zero
-        - intel-igc
         - intel-npu-driver
         - intel-lpmd
-
-        # Multimedia
-        - ffmpeg
-        - ffmpegthumbnailer
-        - libavcodec-freeworld
-        - libheif-freeworld
-
-        # Graphics and hardware acceleration
-        - mesa-va-drivers-freeworld
-        - ocl-icd
-    replace:
-      - from-repo: rpmfusion-nonfree
-        packages:
-          - old: libva-intel-media-driver
-            new: intel-media-driver
+        - intel-igc
 
   - type: dnf
     repos:
@@ -89,6 +89,9 @@ modules:
 
         # Localization and dictionaries
         - hunspell-ru
+
+        # Multimedia
+        - ffmpegthumbnailer
 
         # File synchronization and remote filesystem access
         - rclone
