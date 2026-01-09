@@ -29,7 +29,7 @@ modules:
       cleanup: true
       nonfree: rpmfusion
     replace:
-      - from-repo: rpmfusion
+      - from-repo: rpmfusion-free
         packages:
         - old: ffmpeg-free
           new: ffmpeg
