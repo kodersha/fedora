@@ -28,8 +28,6 @@ modules:
     repos:
       cleanup: true
       nonfree: rpmfusion
-      copr:
-        - holeprof/fedora-extended
     replace:
       - from-repo: rpmfusion
         packages:
@@ -51,13 +49,6 @@ modules:
         - gstreamer1-plugins-ugly
         - gstreamer1-vaapi
         - libheif-freeworld
-        
-        # Intel drivers and runtimes for Meteor Lake
-        - intel-compute-runtime
-        - intel-level-zero
-        - intel-npu-driver
-        - intel-lpmd
-        - intel-igc
 
   - type: dnf
     repos:
@@ -66,12 +57,20 @@ modules:
         - https://raw.githubusercontent.com/kodersha/fedora/refs/heads/main/sources/repos/microsoft-vscode.repo
       copr:
         - kodersha/fedora
+        - holeprof/fedora-extended
       nonfree: rpmfusion
     install:
       allow-erasing: true
       install-weak-deps: false
       skip-unavailable: true
       packages:
+        # Intel drivers and runtimes for Meteor Lake
+        - intel-compute-runtime
+        - intel-level-zero
+        - intel-npu-driver
+        - intel-lpmd
+        - intel-igc
+
         # User interface and desktop utilities
         - gnome-tweaks
         - fastfetch
