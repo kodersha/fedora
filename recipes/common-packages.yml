@@ -27,16 +27,10 @@ modules:
   - type: dnf
     repos:
       cleanup: true
+      copr:
+        - holeprof/fedora-extended
       nonfree: rpmfusion
     replace:
-      - from-repo: rpmfusion-free
-        packages:
-          - old: ffmpeg-free
-            new: ffmpeg
-          - old: mesa-va-drivers
-            new: mesa-va-drivers-freeworld
-          - old: libavcodec
-            new: libavcodec-freeworld
       - from-repo: rpmfusion-nonfree
         packages:
         - old: libva-intel-media-driver
@@ -44,13 +38,13 @@ modules:
     install:
       allow-erasing: true
       install-weak-deps: false
+      skip-unavailable: true
       packages:
-        - gstreamer1-plugin-libav
-        - gstreamer1-plugins-bad-free-extras
-        - gstreamer1-plugins-bad-freeworld
-        - gstreamer1-plugins-ugly
-        - gstreamer1-vaapi
-        - libheif-freeworld
+        - intel-compute-runtime
+        - intel-level-zero
+        - intel-npu-driver
+        - intel-lpmd
+        - intel-igc
 
   - type: dnf
     repos:
@@ -59,20 +53,12 @@ modules:
         - https://raw.githubusercontent.com/kodersha/fedora/refs/heads/main/sources/repos/microsoft-vscode.repo
       copr:
         - kodersha/fedora
-        - holeprof/fedora-extended
       nonfree: rpmfusion
     install:
       allow-erasing: true
       install-weak-deps: false
       skip-unavailable: true
       packages:
-        # Intel drivers and runtimes for Meteor Lake
-        - intel-compute-runtime
-        - intel-level-zero
-        - intel-npu-driver
-        - intel-lpmd
-        - intel-igc
-
         # User interface and desktop utilities
         - gnome-tweaks
         - fastfetch
