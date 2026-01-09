@@ -39,7 +39,8 @@ modules:
             new: libavcodec-freeworld
       - from-repo: rpmfusion-nonfree
         packages:
-          - intel-media-driver
+        - old: libva-intel-media-driver
+          new: intel-media-driver
     install:
       allow-erasing: true
       install-weak-deps: false
