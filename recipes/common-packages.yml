@@ -83,4 +83,6 @@ modules:
         # File synchronization and remote filesystem access
         - rclone
         - ifuse
+
+        - wireguard-tools
         - fuse-sshfs
