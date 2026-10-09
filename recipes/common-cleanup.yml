@@ -192,7 +192,6 @@ modules:
         - gnome-software
         - gnome-system-monitor
         - gnome-tour
-        - totem-video-thumbnailer
         - malcontent-control
         - malcontent-ui-libs
         - rygel
