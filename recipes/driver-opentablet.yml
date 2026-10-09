@@ -1,0 +1,9 @@
+type: script
+snippets:
+  - >-
+    curl -fL
+    https://github.com/OpenTabletDriver/OpenTabletDriver/releases/download/v0.6.7/opentabletdriver-0.6.7-1.x86_64.rpm
+    -o /tmp/opentabletdriver.rpm
+  - >-
+    dnf5 --setopt=tsflags=noscripts install -y /tmp/opentabletdriver.rpm
+  - rm -f /tmp/opentabletdriver.rpm
