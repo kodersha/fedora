@@ -97,3 +97,5 @@ modules:
         - ifuse
 
         - fuse-sshfs
+        - fuse
+        - fuse-libs
