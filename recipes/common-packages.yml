@@ -47,14 +47,6 @@ modules:
         - intel-igc
 
   - type: dnf
-    install:
-      allow-erasing: true
-      install-weak-deps: false
-      skip-unavailable: true
-      packages:
-        - https://github.com/OpenTabletDriver/OpenTabletDriver/releases/latest/download/opentabletdriver-0.6.7-1.x86_64.rpm
-
-  - type: dnf
     repos:
       cleanup: true
       files:
