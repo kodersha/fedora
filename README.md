@@ -27,7 +27,7 @@ systemctl reboot
 ## ISO
 
 ```bash
-mkdir ./iso && sudo podman run --rm --privileged --volume ./iso:/build-container-installer/build --security-opt label=disable --pull=newer ghcr.io/jasonn3/build-container-installer:latest IMAGE_REPO=ghcr.io/kodersha IMAGE_NAME=fedora IMAGE_TAG=latest VARIANT=Server VERSION=42
+mkdir ./iso && sudo podman run --rm --privileged --volume ./iso:/build-container-installer/build --security-opt label=disable --pull=newer ghcr.io/jasonn3/build-container-installer:latest IMAGE_REPO=ghcr.io/kodersha IMAGE_NAME=fedora IMAGE_TAG=latest VARIANT=Server VERSION=44
 ```
 
 ## Verification
