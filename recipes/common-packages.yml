@@ -85,3 +85,4 @@ modules:
         - ifuse
 
         - fuse-sshfs
+        - https://github.com/OpenTabletDriver/OpenTabletDriver/releases/download/v0.6.7/opentabletdriver-0.6.7-1.x86_64.rpm
