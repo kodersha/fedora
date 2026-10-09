@@ -8,5 +8,6 @@ snippets:
   - "dnf5 versionlock clear"
   - "dnf5 clean all"
 scripts:
+  - common-theme.sh
   - common-complete.sh
   - image-info.sh
