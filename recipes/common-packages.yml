@@ -49,6 +49,18 @@ modules:
   - type: dnf
     repos:
       cleanup: true
+      copr:
+        - orowith2os/opentabletdriver
+    install:
+      allow-erasing: true
+      install-weak-deps: false
+      skip-unavailable: true
+      packages:
+        - opentabletdriver
+
+  - type: dnf
+    repos:
+      cleanup: true
       files:
         - https://raw.githubusercontent.com/kodersha/fedora/refs/heads/main/sources/repos/microsoft-vscode.repo
       copr:
@@ -85,4 +97,3 @@ modules:
         - ifuse
 
         - fuse-sshfs
-        - https://github.com/OpenTabletDriver/OpenTabletDriver/releases/download/v0.6.7/opentabletdriver-0.6.7-1.x86_64.rpm
