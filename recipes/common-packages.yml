@@ -84,5 +84,6 @@ modules:
         - rclone
         - ifuse
 
-        - wireguard-tools
         - fuse-sshfs
+
+        - wireguard-tools
