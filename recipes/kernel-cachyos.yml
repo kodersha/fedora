@@ -1,7 +1,6 @@
 modules:        
   - type: script
     scripts:
-      - driver-opentabletdriver.sh
       - kernel-cachyos.sh
 
 #  - type: dnf
