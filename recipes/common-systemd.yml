@@ -7,3 +7,4 @@ system:
 user:
   enabled:
     - podman
+    - opentabletdriver
