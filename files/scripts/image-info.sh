@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 set -ouex pipefail
 
 IMAGE_VENDOR="kodersha"
