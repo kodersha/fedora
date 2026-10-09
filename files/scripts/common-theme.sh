@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -oue pipefail
 
 git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git /tmp/WhiteSur-icon-theme
 /tmp/WhiteSur-icon-theme/install.sh -a
