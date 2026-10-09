@@ -49,6 +49,18 @@ modules:
   - type: dnf
     repos:
       cleanup: true
+      copr:
+        - gloriouseggroll/nobara-42
+    install:
+      allow-erasing: true
+      install-weak-deps: false
+      skip-unavailable: true
+      packages:
+        - opentabletdriver
+
+  - type: dnf
+    repos:
+      cleanup: true
       files:
         - https://raw.githubusercontent.com/kodersha/fedora/refs/heads/main/sources/repos/microsoft-vscode.repo
       copr:
