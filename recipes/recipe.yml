@@ -14,6 +14,8 @@ modules:
   - from-file: common-cleanup.yml
   - from-file: common-packages.yml
 
+  - from-file: driver-opentablet.yml
+
   - from-file: common-homebrew.yml
   - from-file: common-flatpaks.yml
   - from-file: common-fonts.yml
