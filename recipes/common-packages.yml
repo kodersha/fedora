@@ -85,5 +85,3 @@ modules:
         - ifuse
 
         - fuse-sshfs
-
-        - wireguard-tools
